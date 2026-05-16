@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "AI Clip",
+    "slug": "ai-clip",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#0F0F0F"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.yourname.aiclip"
+    },
+    "android": {
+      "package": "com.yourname.aiclip",
+      "adaptiveIcon": {
+        "backgroundColor": "#0F0F0F"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      [
+        "expo-share-intent",
+        {
+          "iosActivationRules": {
+            "NSExtensionActivationSupportsText": true,
+            "NSExtensionActivationSupportsWebURLWithMaxCount": 1,
+            "NSExtensionActivationSupportsWebPageWithMaxCount": 1
+          },
+          "androidMultiIntentFilters": ["text/*"]
+        }
+      ]
+    ],
+    "scheme": "aiclip",
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
